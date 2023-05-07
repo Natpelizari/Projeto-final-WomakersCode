@@ -67,12 +67,6 @@ body{
     box-sizing: border-box;
 }
 
-.section__titulo{
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--cor-destaque);
-    margin:  16px 0;
-}
 
 .button{
     background:none;
