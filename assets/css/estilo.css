@@ -1,0 +1,131 @@
+body{
+    background-color: #f4e4e4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Figtree', sans-serif;
+    color:#231e1e;
+    --cor-destaque: #281f28;
+}
+
+.icone{
+    width: 18px;
+    border-radius: 50%;
+}
+
+.icone--texto{
+    margin: 0 8px;
+    animation: pulsar 1s infinite alternate;
+}
+
+.main{
+    width: 100%;
+    max-width: 1300px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.perfil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.perfil__foto{
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    border:6px solid #1f1b1b;
+}
+
+.perfil__nome{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 40px;
+    font-weight: 500px;
+    color: var(--cor-destaque);
+    margin: 16px 0;
+}
+
+.perfil__descricao{
+    font-size: 16px;
+    font-weight: 400px;
+    color:#9a9595;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.section{
+    padding: 8px;
+    width: 100%;
+    max-width: 700px;
+    margin: 24px auto;
+    box-sizing: border-box;
+}
+
+.section__titulo{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--cor-destaque);
+    margin:  16px 0;
+}
+
+.button{
+    background:none;
+    border: none;
+    font-family: 'Figtree', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-destaque);
+    cursor: pointer;
+    margin: 8px;
+}
+
+.conteudo{
+    background-color: #e1cfcf;
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    align-items: center;
+}
+
+#mais, #mais1, #mais2{
+    font-size: 16px;
+    font-weight: 200;
+    margin: 8px 0;
+    display: none;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 42px;
+    background-color: var(--cor-destaque);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.footer__texto{
+    font-size: 10px;
+    font-weight: 400;
+    color: #f2ebeb;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes pulsar{
+    0% {
+        transform: scale (.8);
+    }
+
+    100%{
+        transform: scale(1.2);
+    }
+}
